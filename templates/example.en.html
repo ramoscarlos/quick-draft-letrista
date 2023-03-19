@@ -1,0 +1,90 @@
+<!-- This is a Letrista example in English -->
+
+{% extends "editor.html" %}
+
+{% block lyrics %}
+All this text is ignored
+Nothing of this will show
+
+No matter how much we continue
+
+[Title]
+--This line is ignored
+This will be the title
+And this is the second title
+But, we actually just take the first title and we exit
+So we can write and write, to no avail
+
+[Intro]
+In theory, the intro should be first
+But not all songs have it
+So, yeah, skip to verse
+-- And a comment, just to brag we can do so
+
+[Verse]
+This is the first verse
+-- And it has two lines
+Well, this is the third line now
+Not the second
+-- Or is it "the second one"?
+X 06 And this has syllables
+X And nothing rhymes
+X And the hats^A are ignored^B
+X As they mark inner rhymes^A
+
+[Prechorus]
+This goes before the chorus
+
+[Chorus]
+And here is the chorus
+-- And it should have "Woo, woo"
+Woo, woo!
+X __ And we repeat again
+X Woo, woo!
+
+[Postchorus]
+This goes after it
+And most likely is short
+
+[Verse]
+-- I am hungry
+-- ^ I should not put that line here
+But this needs to be done
+-- This makes no sense
+I hope you read the lyrics
+Or this verse would make no sense
+A-This is a comment, too
+
+
+
+-- A lot of empty space
+
+[PrechorusR]
+[ChorusR]
+--Here we opted for not repeating the postchorus
+-- Because, we are the creators
+-- And this is just and example, right?
+
+[Bridge]
+This is a change of pace
+And least from the lyric perspective
+As all comes to an end
+
+[ChorusR]
+As we repeat, we can add lines
+For a big epic ending
+
+[Outro]
+This is the last section
+At least, it should be
+X __ Is named like that, right?
+--And that last line was the end.
+
+*************
+
+And all of this, matters not
+For all under the ruler
+
+Is not to be processed either
+
+{% endblock lyrics %}

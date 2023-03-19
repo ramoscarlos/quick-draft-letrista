@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.generic.base import TemplateView
-from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_protect
 
 from letrista.draft import Draft
@@ -9,6 +8,14 @@ from letrista.draft import Draft
 class EditorPageView(TemplateView):
 
 	template_name = "editor.html"
+
+class EnglishExamplePageView(TemplateView):
+
+	template_name = "example.en.html"
+
+class SpanishExamplePageView(TemplateView):
+
+	template_name = "example.es.html"
 
 @csrf_protect
 def get_marke37(request):

@@ -1,0 +1,94 @@
+<!-- Este es un ejemplo de Letrista en español -->
+
+{% extends "editor.html" %}
+
+{% block lyrics %}
+Todo este texto será ignorado
+No se mostrará nada en la derecha
+
+Sin importar cuánto continuemos
+
+[Titulo]
+--Esta línea se ignora
+Este será el título
+Y este el segundo título
+Pero ya que tenemos un título, no hay un segundo
+No importa cuánto más escribamos
+
+[Intro]
+En teoría, el intro va primero
+Pero no todas las canciones tienen
+Así que, vamos al verso
+-- Y aquí ponemos un comentario, porque sí
+
+[Verso]
+Este es el primer verso
+-- Y tiene dos líneas
+Bueno, ya vamos en la tercera
+Aunque fue la segunda
+-- ¿O sigue contando como la segunda?
+X 06 Como sea, esto tiene conteo y esquema
+X Y nada rima
+X Y los sombreritos^A son ignorados^B
+X Porque marcan rimas internas^A
+
+[Precoro]
+Esto va antes del coro
+Nótese que las instrucciones de sección
+Están en español
+
+[Chorus]
+Por fin, llegamos al coro
+-- Y tiene que tener "woo, woo"
+¡Woo, woo!
+X __ Y lo repetimos
+X ¡Woo, woo!
+
+[Postcoro]
+Esto va tras el coro
+Y quizá sea muy corto
+
+[Verso]
+-- Tengo hambre
+-- ^ Aunque quizá no debí poner eso aquí
+Pero, he de continuar
+-- Pero, ¿quién no divaga escribiendo?
+Espero que leas el borrador
+O lo procesado no tendrá sentido
+A-En fin, esto es otro comentario
+
+
+
+-- Aquí hay más espacio
+
+[PrecoroR]
+[CoroR]
+-- Aquí optamos por no repetir el postcoro
+-- Porque, bueno, somos el autor
+-- Y esto es solo un ejemplo, ¿no?
+
+[Bridge]
+Y este es un cambio de ritmo
+Al menos desde el sentido de la letra
+Porque nos aproximamos al final
+
+[ChorusR]
+Y se pueden agregar líneas a un coro repetido
+Para hacer un coro final épico
+
+[Outro]
+Y esta sección no necesariamente está presente
+Pero si lo está
+Debe ser el final
+X __ Por algo se llama así, ¿no?
+--Y ya, eso es todo
+
+*************
+
+Y después de la regla ya no pasa nada
+Ya, bye. Nada se procesa
+
+Esto es un muy buen lugar para meter vocabulario, más anotaciones
+En lugar de tenerlo en un archivo diferente
+
+{% endblock lyrics %}

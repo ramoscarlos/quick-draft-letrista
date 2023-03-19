@@ -31,6 +31,11 @@ $(function() {
     var has_content = ($('#txtLyrics').val().length) > 0
 
     if (has_content) {
+        // If we have content, we send it to the server.
         draftLyricsChanged()
+    } else {
+        // Otherwise, we just highlight to not have a blank render
+        // on the right (rendered lyrics).
+        hljs.highlightAll();
     }
 });

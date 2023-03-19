@@ -15,7 +15,7 @@
 <div class="columns">
     <div class="column">
         {% csrf_token %}
-        <textarea id="txtLyrics" class="textarea is-size-4 has-fixed-size has-background-dark has-text-white" spellcheck="false" cols="1" rows="10"></textarea>
+        <textarea id="txtLyrics" class="textarea is-size-4 has-fixed-size has-background-dark has-text-white" spellcheck="false" cols="1" rows="10">{% block lyrics %}{% endblock lyrics %}</textarea>
     </div>
 
     <div class="column">

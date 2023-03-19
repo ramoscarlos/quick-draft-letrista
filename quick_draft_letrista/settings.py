@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = env.str('SECRET_KEY')
 
-DEBUG = env.bool('DEBUG', default=False)
+DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -23,13 +23,12 @@ if DEBUG:
     SESSION_COOKIE_SECURE = False
     CSRF_COOKIE_SECURE = False
     SECURE_SSL_REDIRECT = False
+    CSRF_TRUSTED_ORIGINS = []
 else:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_SSL_REDIRECT = True
-    CSRF_TRUSTED_ORIGINS = [
-        env.str('CSRF_TRUSTED_ORIGINS')
-    ]
+    CSRF_TRUSTED_ORIGINS = [env.str('CSRF_TRUSTED_ORIGINS')]
 
 SECURE_HSTS_SECONDS = 0
 
