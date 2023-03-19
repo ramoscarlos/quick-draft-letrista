@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="{% static 'css/editor.css' %}">
+<link rel="stylesheet" href="{% static 'css/hljs.marke37.css' %}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" integrity="sha512-bgHRAiTjGrzHzLyKOnpFvaEpGzJet3z4tZnXGjpsCcqOnAH6VGUx9frc5bcIhKTVLEiCO6vEhNAgx5jtLUYrfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{% static 'js/marke37.js' %}"></script>
+<script src="{% static 'js/editor.js' %}"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tomorrow-night-bright.min.css" integrity="sha512-kihsljiamrbQ3b3s3TXoAWNSbzbp+gYIeeva81nQwCj/zICdiT/QnKbWTV7DElmAm3mc4vuTR3fo0ToTe2cpNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock additional_css %}
+
+{% block content %}
+<div class="columns">
+    <div class="column">
+        {% csrf_token %}
+        <textarea id="txtLyrics" class="textarea is-size-4 has-fixed-size has-background-dark has-text-white" spellcheck="false" cols="1" rows="10"></textarea>
+    </div>
+
+    <div class="column">
+        <div id="divLyricsContainer" class="has-background-black has-text-light is-size-4">
+            <pre><code class="language-marke37" id="divLyrics"></code></pre>
+            <br>
+        </div>
+
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="container is-fluid">
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-grouped is-grouped-multiline">
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-black">lines</span>
+                                        <span id="spnLineCount" class="tag is-dark">000</span>
+                                    </div>
+                                </div>
+
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-black">words</span>
+                                        <span id="spnWordCount" class="tag is-dark">000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+{% endblock content %}

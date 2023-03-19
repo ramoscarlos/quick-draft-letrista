@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.columns {
+    height: 102.4%;
+}
+.column {
+    padding: 0;
+}
+
+.table, .table td, .table tr {
+    padding: 0 !important;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: transparent !important;
+}
+
+.is-dark, .has-background-dark {
+    background: #1e1e1e !important;
+}
+
+#txtLyrics {
+    font-family: "DejaVu Sans Mono", "Anonymous Pro";
+    overflow: scroll;
+    padding: 0.5em;
+    height: 100%;
+}
+
+#txtLyrics {
+    border: none;
+    padding: 0.75em;
+}
+
+#divLyricsContainer {
+    height: 100%;
+}
+
+code, pre {
+    height: 100%;
+}
+
+pre {
+    overflow: scroll;
+}
+
+code, pre {
+    margin: 0;
+    padding: 0;
+}

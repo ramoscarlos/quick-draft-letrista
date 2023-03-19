@@ -1,0 +1,47 @@
+/* Highlight.js Marke37  */
+
+/* Sections */
+
+.hljs-chorus,
+.hljs-prechorus,
+.hljs-postchorus {
+    font-weight: bold;
+}
+
+.hljs-title {
+    color: #FFFFFF !important;
+}
+
+.hljs-intro {
+    color: #9CDCF4;
+}
+
+.hljs-prechorus {
+    color: #DD6FA4;
+}
+
+.hljs-chorus {
+/*    color: #EB458B;*/
+    color: red;
+}
+
+.hljs-postchorus {
+    color: #DD6FA4;
+}
+
+.hljs-bridge {
+    font-style: italic;
+/*    color: #FAF5AB;*/
+    color: yellow;
+}
+
+.hljs-outro {
+    color: #7DD0F1;
+}
+
+
+/* Voice modifications */
+
+.hljs-yelling {
+    color: #777777;
+}

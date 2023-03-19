@@ -1,0 +1,7 @@
+.venv
+.env
+.DS_Store
+__pycache__
+editor/__pycache__
+quick_draft_letrista/__pycache__
+staticfiles
