@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_letrista.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'quick_draft_letrista.settings')
 
 application = get_wsgi_application()
